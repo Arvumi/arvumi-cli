@@ -119,16 +119,3 @@ configuration directory's inherited access permissions.
 `arvumi link` writes the project UUID to `.arvumi` in the current directory.
 Add `.arvumi` to your project's `.gitignore` if links differ between developers (uncommon).
 
-## Development and releases
-
-```sh
-cargo build --locked -p arvumi-cli
-cargo clippy --locked -p arvumi-cli --all-targets -- -D warnings
-cargo test --locked -p arvumi-cli -- --test-threads=1
-```
-
-CLI tests need no running server or database. See the repository's
-[release guide](https://github.com/Arvumi/arvumi-cli/blob/main/docs/cli-release.md)
-for package verification and the separate manual publication procedure.
-
-Licensed under the [MIT license](LICENSE).
