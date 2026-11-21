@@ -1,0 +1,7 @@
+target/
+.env
+edge-setup.env
+deploy/terraform/terraform.tfstate*
+deploy/terraform/.terraform/
+deploy/terraform/__pycache__/
+

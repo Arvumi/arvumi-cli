@@ -18,21 +18,21 @@ name = "arvumi"
 path = "src/main.rs"
 
 [dependencies]
-serde = { workspace = true }
-serde_json = { workspace = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "io-util", "signal", "sync", "time"] }
-clap = { workspace = true }
+clap = { version = "4", features = ["derive", "env"] }
 reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
-uuid = { workspace = true }
-eyre = { workspace = true }
+uuid = { version = "1", features = ["v4", "serde"] }
+eyre = "0.6"
 dirs = "5"
 dialoguer = "0.11"
 open = "5"
 
-futures-util = { workspace = true }
-chrono = { workspace = true }
+futures-util = "0.3"
+chrono = { version = "0.4", features = ["serde"] }
 tokio-tungstenite = { version = "0.24", features = ["rustls-tls-native-roots"] }
-libc = { workspace = true }
+libc = "0.2"
 
 [dev-dependencies]
 tempfile = "3"
