@@ -17,15 +17,9 @@ required.
 After the first crates.io release:
 
 ```sh
-cargo install arvumi-cli --locked
+cargo install arvumi-cli
 arvumi --version
 arvumi --help
-```
-
-Until that release, install from the repository root:
-
-```sh
-cargo install --path crates/arvumi-cli --locked
 ```
 
 Cargo normally installs executables in `~/.cargo/bin` (or `%USERPROFILE%\.cargo\bin`
